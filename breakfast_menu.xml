@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmlns="https://www.w3schools.com"
-xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-xsi:schemaLocation="esquemas.xsd">
-
-
-<breakfast_menu>
+<breakfast_menu xmlns="https://www.w3schools.com"
+				xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+				xsi:schemaLocation="https://www.w3schools.com esquemas.xsd"> 
 <food>
     <name>Belgian Waffles</name>
     <price>$5.95</price>
@@ -46,5 +43,5 @@ xsi:schemaLocation="esquemas.xsd">
     <calories>950</calories>
 </food>
 </breakfast_menu>
-</xmlns>
-</xml>
+
+

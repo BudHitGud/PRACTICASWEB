@@ -1,13 +1,45 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Page Title</title>
+	
+<link rel="stylesheet" href="formato.css">	
+<script src="ordenes.js"></script>
+
+	
+<title>PRACTICAS WEB MAIN PAGE</title>
 </head>
 <body>
 
-<h1>This is a Heading</h1>
-<p>This is a paragraph.</p>
-<p>This is a paragraph.</p>
+<h1>Probando a unir los diferentes documentos</h1>
+<p>Se vinculan los archivos otra vez..</p>
+<p>usando xampp para que funcione php y xslt</p>
+
+<button type="button" onclick="myFunction()">Try it</button>
+<p id="demo"> Parrafo que cambia </p>
+
+<p>
+	<?php
+	// Cargar el archivo XML
+	$xmlDoc = new DOMDocument();
+	$xmlDoc->load("menu.xml");
+
+	// Cargar el archivo XSLT
+	$xslDoc = new DOMDocument();
+	$xslDoc->load("menu.xsl");
+
+	// Crear un procesador XSLT
+	$proc = new XSLTProcessor();
+	$proc->importStyleSheet($xslDoc);
+
+	// Realizar la transformación
+	$newXml = $proc->transformToXML($xmlDoc);
+
+	// Mostrar el resultado
+	echo $newXml;
+	?>
+	
+	
+</p>
 
 </body>
 </html>
