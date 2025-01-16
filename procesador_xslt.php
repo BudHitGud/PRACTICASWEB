@@ -1,11 +1,11 @@
 <?php
 // Cargar el archivo XML
 $xmlDoc = new DOMDocument();
-$xmlDoc->load("menu.xml");
+$xmlDoc->load("breakfast_menu.xml");
 
 // Cargar el archivo XSLT
 $xslDoc = new DOMDocument();
-$xslDoc->load("menu.xsl");
+$xslDoc->load("transformacion.xsl");
 
 // Crear un procesador XSLT
 $proc = new XSLTProcessor();
