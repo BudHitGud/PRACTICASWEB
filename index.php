@@ -14,6 +14,11 @@
 <p>Se vinculan los archivos otra vez..</p>
 <p>usando xampp para que funcione php y xslt</p>
 
+<?php
+	echo "My first PHP script!";
+	 include 'procesador_xslt.php';
+?>
+
 <button type="button" onclick="myFunction()">Try it</button>
 <p id="demo"> Parrafo que cambia </p>
 
