@@ -15,18 +15,18 @@
             <th>Descripción</th>
             <th>Calorías</th>
           </tr>
-          <xsl:apply-templates select="breakfast_menu/food"/>
+          <xsl:apply-templates select="m:breakfast_menu/m:food"/>
         </table>
       </body>
     </html>
   </xsl:template>
 
-  <xsl:template match="food">
+  <xsl:template match="m:food">
     <tr>
-      <td><xsl:value-of select="name"/></td>
-      <td><xsl:value-of select="price"/></td>
-      <td><xsl:value-of select="description"/></td>
-      <td><xsl:value-of select="calories"/></td>
+      <td><xsl:value-of select="m:name"/></td>
+      <td><xsl:value-of select="m:price"/></td>
+      <td><xsl:value-of select="m:description"/></td>
+      <td><xsl:value-of select="m:calories"/></td>
     </tr>
   </xsl:template>
 </xsl:stylesheet>

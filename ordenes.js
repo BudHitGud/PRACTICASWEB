@@ -1,4 +1,5 @@
-async function loadAndTransform() {
+async function loadAndTransform() 
+{
     try {
         // 1. Cargar el XML
         const xmlResponse = await fetch('menu.xml');
@@ -50,4 +51,5 @@ async function loadAndTransform() {
 
 // Ejecutar la función cuando el DOM esté completamente cargado.
 // Esto asegura que el div 'content' ya exista en la página.
+document.getElementById("demo").innerHTML = "Cambiado";
 document.addEventListener('DOMContentLoaded', loadAndTransform);
